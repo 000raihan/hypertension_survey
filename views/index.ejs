@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <section class="container" id="ques">
+      <div class="row logo-box">
+        <div class="col image-box" style="text-align: left;">
+          <!-- <img src="/images/w_logo.png" alt="Logos" /> -->
+          <img src="/images/h-logo.png" alt="Logos" style="max-height: 190px" />
+        </div>
+      </div>
+
+      <div class="row intro-box">
+        <div class="col">
+          <h1>হাইপারটেনশন প্রতিরোধ ও প্রাথমিক নির্ণয়ের জন্য এই জরিপটি আপনাকে সহায়তা করবে।</h1>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row main-box">
+        <div class="col">
+          <!-- Form -->
+          <form action="/submit/save" method="post" name="form1">
+            <div id="q1">
+              <!-- ! Question Box ! -->
+              <div class="question-box">
+                <span>প্রশ্ন ১</span>
+                <h2>আপনার কি কখনও হাইপারটেনশন (উচ্চ রক্তচাপ) নির্ণীত হয়েছে? </h2>
+              </div>
+              <!-- ! Question Box ! -->
+
+              <!-- ! Select Box ! -->
+              <div class="select-box">
+                <div class="form-check select-1">
+                  <input type="radio" class="form-check-input" id="radio1" name="q1" value="yes" />
+                  <label class="form-check-label" for="radio1">হ্যাঁ</label>
+                </div>
+
+                <div class="form-check select-2">
+                  <input type="radio" class="form-check-input" id="radio2" name="q1" value="no" />
+                  <label class="form-check-label" for="radio2">না</label>
+                </div>
+              </div>
+              <!-- ! Select Box ! -->
+            </div>
+
+            <div id="q2" style="display: none">
+              <!-- ! Question Box ! -->
+              <div class="question-box">
+                <span>প্রশ্ন ২</span>
+                <h2>আপনি কি প্রায়শই মাথা ব্যথা বা চোখে অস্পষ্টভাবে দেখা অনুভব করেন? </h2>
+              </div>
+              <!-- ! Question Box ! -->
+
+              <!-- ! Select Box ! -->
+              <div class="select-box">
+                <div class="form-check select-1">
+                  <input type="radio" class="form-check-input" id="radio3" name="q2" value="yes" />
+                  <label class="form-check-label" for="radio3">হ্যাঁ</label>
+                </div>
+
+                <div class="form-check select-2">
+                  <input type="radio" class="form-check-input" id="radio4" name="q2" value="no" />
+                  <label class="form-check-label" for="radio4">না</label>
+                </div>
+              </div>
+              <!-- ! Select Box ! -->
+            </div>
+
+            <div id="q3" style="display: none">
+              <!-- ! Question Box ! -->
+              <div class="question-box">
+                <span>প্রশ্ন ৩</span>
+                <h2>আপনি কি শ্বাসকষ্ট, বুক ব্যথা বা অনিয়মিত হৃদস্পন্দন অনুভব করেন?</h2>
+              </div>
+              <!-- ! Question Box ! -->
+
+              <!-- ! Select Box ! -->
+              <div class="select-box">
+                <div class="form-check select-1">
+                  <input type="radio" class="form-check-input" id="radio5" name="q3" value="yes" />
+                  <label class="form-check-label" for="radio5">হ্যাঁ</label>
+                </div>
+
+                <div class="form-check select-2">
+                  <input type="radio" class="form-check-input" id="radio6" name="q3" value="no" />
+                  <label class="form-check-label" for="radio6">না</label>
+                </div>
+              </div>
+              <!-- ! Select Box ! -->
+            </div>
+
+            <div id="q4" style="display: none">
+              <!-- ! Question Box ! -->
+              <div class="question-box">
+                <span>প্রশ্ন ৪</span>
+                <h2>আপনার কি হাইপারটেনশনের পরিবারিক ইতিহাস আছে? </h2>
+              </div>
+              <!-- ! Question Box ! -->
+
+              <!-- ! Select Box ! -->
+              <div class="select-box">
+                <div class="form-check select-1">
+                  <input type="radio" class="form-check-input" id="radio7" name="q4" value="yes" />
+                  <label class="form-check-label" for="radio7">হ্যাঁ</label>
+                </div>
+
+                <div class="form-check select-2">
+                  <input type="radio" class="form-check-input" id="radio8" name="q4" value="no" />
+                  <label class="form-check-label" for="radio8">না</label>
+                </div>
+              </div>
+              <!-- ! Select Box ! -->
+            </div>
+
+            <div id="q5" style="display: none">
+              <!-- ! Question Box ! -->
+              <div class="question-box">
+                <span>প্রশ্ন ৫</span>
+                <h2>আপনি কি সাম্প্রতিককালে আপনার রক্তচাপ পরিমাপ করেছেন? যদি হ্যাঁ হয়, তাহলে নিচের যেকোন একটি বক্সে টিক দিন</h2>
+              </div>
+              <!-- ! Question Box ! -->
+
+              <!-- ! Select Box ! -->
+              <div class="select-box">
+                <div class="form-check select-1-1">
+                  <input type="radio" class="form-check-input" id="radio9" name="q5" value="box_1" />
+                  <label class="" for="radio9">
+                   <p style="width: max-content;">Systolic: 130-139 mmHg</p>
+                   <p style="width: max-content;">
+                     Diastolic: 80-89 mmHg
+                   </p>
+                  </label>
+                </div>
+                <!-- <div class="form-check select-2">
+                  <input type="radio" class="form-check-input" id="radio10" name="q5" value="no" />
+                  <label class="form-check-label" for="radio10">না</label>
+                </div> -->
+                <div class="form-check select-1-1">
+                  <input type="radio" class="form-check-input" id="radio10" name="q5" value="box_2" />
+                  <label class="" for="radio10">
+                   <p style="width: max-content;">Systolic: 130-139 mmHg</p>
+                   <p style="width: max-content;">
+                     Diastolic: 80-89 mmHg
+                   </p>
+                  </label>
+                </div>
+                <div class="form-check select-1-1">
+                  <input type="radio" class="form-check-input" id="radio11" name="q5" value="box_3" />
+                  <label class="" for="radio11">
+                   <p style="width: max-content;">Systolic: 130-139 mmHg</p>
+                   <p style="width: max-content;">
+                     Diastolic: 80-89 mmHg
+                   </p>
+                  </label>
+                </div>
+              </div>
+              <!-- ! Select Box ! -->
+            </div>
+
+            <div class="button-box">
+              <button id="pb" type="button" style="display: none">পূর্বের প্রশ্ন</button>
+              <button id="nb" type="button">পরবর্তী প্রশ্ন</button>
+              <button id="sb" type="submit" style="display: none">উত্তর দেখুন</button>
+            </div>
+          </form>
+          <!-- Form -->
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- JavaScript -->
+  <script>
+    let q = 1;
+    $("#nb").click(function () {
+      if (q === 0) {
+        $("#q1").show();
+        $("#q2").hide();
+        $("#q3").hide();
+        $("#q4").hide();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").hide();
+        $("#sb").hide();
+      }
+      if (q === 1) {
+        $("#q1").hide();
+        $("#q2").show();
+        $("#q3").hide();
+        $("#q4").hide();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").show();
+        $("#sb").hide();
+      }
+      if (q === 2) {
+        $("#q1").hide();
+        $("#q2").hide();
+        $("#q3").show();
+        $("#q4").hide();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").show();
+        $("#sb").hide();
+      }
+      if (q === 3) {
+        $("#q1").hide();
+        $("#q2").hide();
+        $("#q3").hide();
+        $("#q4").show();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").show();
+        $("#sb").hide();
+      }
+      if (q === 4) {
+        $("#q1").hide();
+        $("#q2").hide();
+        $("#q3").hide();
+        $("#q4").hide();
+        $("#q5").show();
+        $("#nb").hide();
+        $("#pb").show();
+        $("#sb").show();
+      }
+      q++;
+    });
+
+    $("#pb").click(function () {
+      q--;
+      if (q === 1) {
+        $("#q1").show();
+        $("#q2").hide();
+        $("#q3").hide();
+        $("#q4").hide();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").hide();
+        $("#sb").hide();
+      }
+      if (q === 2) {
+        $("#q1").hide();
+        $("#q2").show();
+        $("#q3").hide();
+        $("#q4").hide();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").show();
+        $("#sb").hide();
+      }
+      if (q === 3) {
+        $("#q1").hide();
+        $("#q2").hide();
+        $("#q3").show();
+        $("#q4").hide();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").show();
+        $("#sb").hide();
+      }
+      if (q === 4) {
+        $("#q1").hide();
+        $("#q2").hide();
+        $("#q3").hide();
+        $("#q4").show();
+        $("#q5").hide();
+        $("#nb").show();
+        $("#pb").show();
+        $("#sb").hide();
+      }
+    });
+  </script>
+  <!-- JavaScript -->
+</html>

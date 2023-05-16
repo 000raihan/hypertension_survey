@@ -1,0 +1,233 @@
+/*
+  #ED1C24
+  #0072BC
+  #FFF200
+  #000000
+*/
+
+#ques {
+  padding: 0px 24px;
+}
+
+#ques .intro-box {
+  padding: 24px 0;
+}
+
+#ques .intro-box h1 {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  color: #0072bc;
+}
+
+#ques .main-box {
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+
+#ques .main-box .question-box {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#ques .main-box .question-box span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ed1c24;
+  margin-bottom: 8px;
+}
+
+#ques .main-box .question-box h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  margin-bottom: 8px;
+  line-height: 45px;
+}
+
+#ques .main-box .select-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+#ques .main-box .select-box .select-1,
+#ques .main-box .select-box .select-2 {
+  width: 160px;
+  display: flex;
+  border-radius: 12px;
+  padding: 0.5em 2em 0.5em 2em;
+}
+#ques .main-box .select-box .select-1 {
+  border: 2px solid #0072bc;
+}
+#ques .main-box .select-box .select-1:hover {
+  background-color: #0072bc;
+}
+#ques .main-box .select-box .select-1:hover label {
+  color: #fff;
+}
+
+/* -----------1-1------------ */
+#ques .main-box .select-box .select-1-1{
+  /* width: 160px; */
+  display: flex;
+  border-radius: 12px;
+  padding: 0.5em 2em 0.5em 2em;
+}
+#ques .main-box .select-box .select-1-1 {
+  border: 2px solid #0072bc;
+}
+#ques .main-box .select-box .select-1-1:hover {
+  background-color: #0072bc;
+}
+#ques .main-box .select-box .select-1-1:hover label {
+  color: #fff;
+}
+#ques .main-box .select-box .select-1-1 label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 17px 12px;
+}
+/* ------------1-1------------------- */
+
+#ques .main-box .select-box .select-2 {
+  border: 2px solid #ed1c24;
+}
+#ques .main-box .select-box .select-2:hover {
+  background-color: #ed1c24;
+}
+#ques .main-box .select-box .select-2:hover label {
+  color: #fff;
+}
+
+#ques .main-box .select-box .select-1 label,
+#ques .main-box .select-box .select-2 label {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 24px 12px;
+}
+#ques .main-box .select-box .select-1 label {
+  color: #0072bc;
+}
+#ques .main-box .select-box .select-2 label {
+  color: #ed1c24;
+}
+
+#ques .main-box .button-box {
+  margin-top: 96px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+#ques .main-box .button-box #pb,
+#ques .main-box .button-box #nb,
+#ques .main-box .button-box #sb {
+  background-color: #0072bc;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#ques .main-box .button-box #nb {
+  background-color: #0072bc;
+  color: #fff;
+  border: 1px solid #0072bc;
+}
+#ques .main-box .button-box #pb {
+  background-color: #fff;
+  color: #0072bc;
+  border: 1px solid #0072bc;
+  margin-right: auto;
+}
+#ques .main-box .button-box #sb {
+  background-color: #ed1c24;
+  color: #fff;
+  border: 1px solid #ed1c24;
+}
+
+#ques .logo-box {
+  padding: 24px 0;
+}
+
+#ques .logo-box .image-box {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#ques .logo-box .image-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#ques .main-box-se {
+  padding: 24px 0;
+}
+
+#ques .main-box-se .success-box {
+  background-color: #fffccc;
+  padding: 32px 24px;
+  border-radius: 8px;
+  margin-bottom: 48px;
+}
+#ques .main-box-se .success-box p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2;
+  color: #000;
+  margin-bottom: 0;
+}
+
+#ques .main-box-se .error-box {
+  background-color: #fbd2d3;
+  padding: 32px 24px;
+  border-radius: 8px;
+  margin-bottom: 48px;
+}
+#ques .main-box-se .error-box p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2;
+  color: #000;
+  margin-bottom: 0;
+}
+
+#ques .main-box-se .button-box-se {
+  display: flex;
+  justify-content: center;
+}
+
+#ques .main-box-se .button-box-se #home {
+  background-color: #0072bc;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#ques .main-box-se .link-box {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#ques .main-box-se .link-box a {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ed1c24;
+}
