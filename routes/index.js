@@ -13,6 +13,9 @@ router.post('/submit/save', Survey.save);
 router.get('/success', function(req, res, next) {
   res.render('success', { title: 'WKD Questionaire' });
 });
+router.get('/banner', function(req, res, next) {
+  res.render('banner', { title: 'WKD Questionaire' });
+});
 router.get('/error', function(req, res, next) {
   res.render('error', { title: 'WKD Questionaire' });
 });

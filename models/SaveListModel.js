@@ -14,6 +14,33 @@ module.exports = sequelize => {
             comment: null,
             field: "id"
         },
+        name: {
+            type: DataTypes.STRING(255),
+            allowNull: true,
+            defaultValue: null,
+            primaryKey: false,
+            autoIncrement: false,
+            comment: null,
+            field: "name"
+        },
+        mobile: {
+            type: DataTypes.STRING(255),
+            allowNull: true,
+            defaultValue: null,
+            primaryKey: false,
+            autoIncrement: false,
+            comment: null,
+            field: "mobile"
+        },
+        email: {
+            type: DataTypes.STRING(255),
+            allowNull: true,
+            defaultValue: null,
+            primaryKey: false,
+            autoIncrement: false,
+            comment: null,
+            field: "email"
+        },
         q1: {
             type: DataTypes.STRING(255),
             allowNull: true,

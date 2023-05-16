@@ -35,7 +35,27 @@
         <div class="col">
           <!-- Form -->
           <form action="/submit/save" method="post" name="form1">
-            <div id="q1">
+            <div id="q0">
+              <!-- ! Question Box ! -->
+              <div class="question-box">
+                <!-- <span>প্রশ্ন ১</span> -->
+                <h2>আপনার প্রাথমিক ইনফরমেশন এখানে লিখুন</h2>
+              </div>
+              <!-- ! Question Box ! -->
+
+              <!-- ! Select Box ! -->
+              <div class="select-box">
+                <div class="form input-section">
+                  <input type="text" style="width: 100%;font-size: 1.2rem; padding: 0.5rem 1rem;" class="form-control" id="name" name="name" placeholder="Enter your name" >
+                  <input type="number"style="margin-top: .5rem; width: 100%;font-size: 1.2rem; padding: 0.5rem 1rem;" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile number" >
+                  <input type="email" style="margin-top: .5rem; width: 100%;font-size: 1.2rem; padding: 0.5rem 1rem;" class="form-control" id="email" name="email" placeholder="Enter your email address" >
+                </div>
+
+        
+              </div>
+              <!-- ! Select Box ! -->
+            </div>
+            <div id="q1" style="display: none">
               <!-- ! Question Box ! -->
               <div class="question-box">
                 <span>প্রশ্ন ১</span>
@@ -186,9 +206,25 @@
 
   <!-- JavaScript -->
   <script>
-    let q = 1;
+    let q = 0;
     $("#nb").click(function () {
+
+      const nameInput = document.getElementById("name");
+      const mobileInput = document.getElementById("mobile");
+
+      console.log("name is : ", nameInput.value)
+      console.log("mobile is : ", mobileInput.value)
+
+      if(!nameInput.value){
+        alert("Please insert name");
+        return
+      }else if(!mobile.value){
+        alert("Please insert mobile");
+        return 
+      }
+
       if (q === 0) {
+        $("#q0").hide();
         $("#q1").show();
         $("#q2").hide();
         $("#q3").hide();
