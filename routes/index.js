@@ -5,19 +5,19 @@ const Survey = require('../controllers/Survey');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'WKD Questionaire' });
+  res.render('index', { title: 'Hypertension Survey' });
 });
 
 router.post('/submit/save', Survey.save);
 
 router.get('/success', function(req, res, next) {
-  res.render('success', { title: 'WKD Questionaire' });
+  res.render('success', { title: 'Hypertension Survey' });
 });
 router.get('/banner', function(req, res, next) {
-  res.render('banner', { title: 'WKD Questionaire' });
+  res.render('banner', { title: 'Hypertension Survey' });
 });
 router.get('/error', function(req, res, next) {
-  res.render('error', { title: 'WKD Questionaire' });
+  res.render('error', { title: 'Hypertension Survey' });
 });
 
 module.exports = router;

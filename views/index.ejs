@@ -34,7 +34,7 @@
       <div class="row main-box">
         <div class="col">
           <!-- Form -->
-          <form action="/submit/save" method="post" name="form1">
+          <form action="/submit/save" method="post" name="form1" id="myForm">
             <div id="q0">
               <!-- ! Question Box ! -->
               <div class="question-box">
@@ -195,7 +195,7 @@
             <div class="button-box">
               <button id="pb" type="button" style="display: none">পূর্বের প্রশ্ন</button>
               <button id="nb" type="button">পরবর্তী প্রশ্ন</button>
-              <button id="na" type="submit" style="display: none">না</button>
+              <button id="na" onclick="modifyFormData()" style="display: none">না</button>
               <button id="sb" type="submit" style="display: none">উত্তর দেখুন</button>
             </div>
           </form>
@@ -207,6 +207,21 @@
 
   <!-- JavaScript -->
   <script>
+
+      function modifyFormData() {
+        let form = document.getElementById("myForm");
+
+        var extraDataInput = document.createElement("input");
+        extraDataInput.type = "hidden";
+        extraDataInput.name = "no_data";
+        extraDataInput.value = "no";
+
+        form.appendChild(extraDataInput);
+
+        console.log("form value is : ", form)
+        form.submit();
+      }
+
     let q = 0;
     $("#nb").click(function () {
 
