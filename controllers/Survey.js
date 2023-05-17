@@ -48,8 +48,11 @@ exports.save = [
         }else if(req.body.q5 === "box_2"){
                 message = `আপনি মাঝারী মাত্রায় হাইপারটেনশনের ঝুঁকিতে আছেন, নিয়মিত রক্তচাপ পরীক্ষা করুন ও অবশ্যই বিশেষজ্ঞ চিকিৎসকের শরণাপন্ন হোন।`;
                 req.flash('success', message);
-        }else {
+        }else if(req.body.q5 === "box_3"){
             message = `আপনি উচ্চ মাত্রায় হাইপারটেনশনের ঝুঁকিতে আছেন, দ্রুত বিশেষজ্ঞ চিকিৎসকের শরণাপন্ন হোন এবং সঠিক চিকিৎসা গ্রহণ করুন।`;
+            req.flash('error', message);
+        }else {
+            message = `স্বাস্থ্যকর জীবন যাপন করুন, সুস্থ থাকুন। নিয়মিত রক্তচাপ পরিমাপ করুন।`;
             req.flash('error', message);
         }
         const save_date = await SaveListModel.create(req.body).catch(errorHandler);
