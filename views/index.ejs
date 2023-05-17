@@ -195,6 +195,7 @@
             <div class="button-box">
               <button id="pb" type="button" style="display: none">পূর্বের প্রশ্ন</button>
               <button id="nb" type="button">পরবর্তী প্রশ্ন</button>
+              <button id="na" type="submit" style="display: none">না</button>
               <button id="sb" type="submit" style="display: none">উত্তর দেখুন</button>
             </div>
           </form>
@@ -273,6 +274,7 @@
         $("#nb").hide();
         $("#pb").show();
         $("#sb").show();
+        $("#na").show();
       }
       q++;
     });
@@ -317,6 +319,7 @@
         $("#q5").hide();
         $("#nb").show();
         $("#pb").show();
+        $("#na").hide();
         $("#sb").hide();
       }
     });
